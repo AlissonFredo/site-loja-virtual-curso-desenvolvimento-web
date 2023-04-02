@@ -111,3 +111,23 @@ CREATE TABLE
         FOREIGN KEY (id_pedido) REFERENCES tb_pedidos (id_pedido),
         FOREIGN KEY (id_produto) REFERENCES tb_produtos (id_produto)
     );
+
+INSERT INTO
+    tb_clientes (nome, idade)
+VALUES
+    ('douglas', 22);
+
+INSERT INTO
+    tb_pedidos (id_cliente)
+VALUES
+    (1);
+
+INSERT INTO
+    tb_pedidos_produtos (id_pedido, id_produto)
+VALUES
+    (1, 2);
+
+INSERT INTO
+    tb_pedidos_produtos (id_pedido, id_produto)
+VALUES
+    (1, 3);
